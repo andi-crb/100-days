@@ -3,10 +3,28 @@
 <head>
     <title>Day 1</title>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        $(document).ready(function(){
+            $("fragment").hide();
+            $("#toshow").click(function(){
+                $("fragment").fadeIn(4000);
+        });
+});
+    </script>
 </head>
   <body>
+      <div class="row">
+        <div class="four columns"></div>
+        <div class="four columns">
+          <h1>Day Two</h1>
+          <p><span id="toshow">Collect the fragment of words caught in the spider web in the sour-fruit tree.</span></p>
+          <p><span id="fragment">...from the West, stretching and unraveling like a coiled snake...</span></p>
+        </div>
+        <div class="four columns"></div>
+      </div>
   </body>
 </html>
