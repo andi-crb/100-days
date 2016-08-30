@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Day 1</title>
+    <title>Day 2</title>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        $(document).ready(function(){
+            $("#answer").hide();
+            $("#ignore").hide();
+            $("#clickanswer").click(function(){
+                $("#answer").show();
+            $("#clickignore").click(function(){
+                $("#ignore").show();
+        });
+});
+    </script>
 </head>
   <body>
+      <div class="row">
+        <div class="four columns"></div>
+        <div class="four columns">
+          <h1>Day Three</h1>
+          <p>You've collected fragments of stories from the trees. You've milked the cows and begun to churn the butter and outside the fruit is ripening in the orchard. You hear a knock at the door.</p>
+          <p>Do you <span id="clickanswer">answer the door</span>? Or do you <span id="clickanswer">ignore it</span>?</p>
+          <p><span id="answer"></span></p>
+        </div>
+        <div class="four columns"></div>
+      </div>
   </body>
 </html>
