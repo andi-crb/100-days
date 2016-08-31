@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Day 1</title>
+    <title>Day 3</title>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        $(document).ready(function(){
+            $("#answer").hide();
+            $("#ignore").hide();
+            $("#clickanswer").click(function(){
+                $("#answer").show();
+                $("#ignore").hide();
+            $("#clickignore").click(function(){
+                $("#ignore").show();
+                $("#answer").hide();
+        });
+});
+    </script>
 </head>
   <body>
+      <div class="row">
+        <div class="four columns"></div>
+        <div class="four columns">
+          <h1>Day Three</h1>
+          <p>You've collected fragments of stories from the trees. You've milked the cows and begun to churn the butter and outside the fruit is ripening in the orchard. You hear a knock at the door.</p>
+          <p>Do you <span id="clickanswer" class="pointer">answer the door</span>? Or do you <span id="clickanswer" class="pointer">ignore it</span>?</p>
+          <p><span id="answer">You open the door and forbidden words force their way in, blowing through your hair and rippling through your clothes, swirling round your house. They shake the wooden walls and the tiled roof. They swarm at your chimney stack until it crashes to the ground and the cat screeches and you beg or you fight it doesn't matter, because the roof is opening out now, peeling back like skin on fruit, opening up to the grey sky above.</span></p>
+          <p><span id="answer">The words are gone, and you can't remember a single one of them.</span></p>
+          <p><span id="ignore">Words, forbidden words, slide their way in through the keyhole and under the door. They shake the wooden walls and the tiled roof. They swarm at your chimney stack until it crashes to the ground and the cat screeches and you beg or you fight it doesn't matter, because the roof is opening out now, peeling back like skin on fruit, opening up to the grey sky above.</span></p>
+          <p><span id="ignore">The words are gone, and you can't remember a single one of them.</span></p>
+        </div>
+        <div class="four columns"></div>
+      </div>
   </body>
 </html>
